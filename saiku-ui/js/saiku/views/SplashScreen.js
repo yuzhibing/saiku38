@@ -214,7 +214,7 @@ var SplashScreen = Backbone.View.extend({
 			url: "http://meteorite.bi/news.json",
 			async: false,
 			contentType: "application/json",
-			dataType: 'jsonp',    
+			dataType: 'jsonp',
 			jsonpCallback: 'jsonCallback',
 
 			success: function(json) {
