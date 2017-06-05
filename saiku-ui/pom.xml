@@ -41,7 +41,7 @@
 					<jsEngine>CLOSURE</jsEngine>
 					<closureLanguage>ECMASCRIPT5</closureLanguage>
 					<jsFinalFile>saiku.js</jsFinalFile>
-					<webappSourceDir>${basedir}/WebContent/js/saiku/</webappSourceDir>
+					<webappSourceDir>${basedir}/js/saiku/</webappSourceDir>
 					<jsSourceDir>.</jsSourceDir>
 					<jsSourceIncludes>
 						<jsSourceInclude>models/SaikuOlapQuery.js</jsSourceInclude>
