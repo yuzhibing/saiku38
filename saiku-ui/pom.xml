@@ -239,6 +239,13 @@
 											<include name="js/saiku/Saiku.js" />
 										</fileset>
 									</copy>
+									
+									<copy todir="WebContent">
+										<fileset dir="${basedir}/">
+											<exclude name="target/saiku-ui" />
+										</fileset>
+									</copy>
+									
 									<zip destfile="target/saiku-ui-nomunge-${project.version}.war">
 										<zipfileset dir="target/saiku-ui2/" />
 									</zip>
