@@ -213,7 +213,7 @@ public class ThinQueryService implements Serializable {
     public CellDataSet execute(ThinQuery tq, String formatter) {
         String formatterName = formatter == null ? "" : formatter.toLowerCase();
         ICellSetFormatter cf = cff.forName(formatterName);
-        return execute(tq, cf);
+        return execute3(tq, cf);
     }
 
     public CellDataSet getFormattedResult(String query, String format) throws Exception {
@@ -230,7 +230,7 @@ public class ThinQueryService implements Serializable {
         return result;
     }
 
-    private CellDataSet execute(ThinQuery tq, ICellSetFormatter formatter) {
+    private CellDataSet execute3(ThinQuery tq, ICellSetFormatter formatter) {
         try {
 
             Long start = (new Date()).getTime();
